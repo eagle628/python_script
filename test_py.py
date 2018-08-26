@@ -9,4 +9,6 @@ print(sys.version)
 tf = eng.isprime(37)
 print(tf)
 
+y = eng.generate_plant_response();
+print(len(y))
 eng.quit()
