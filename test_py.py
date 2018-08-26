@@ -1,11 +1,12 @@
+#!python3.5
+import sys
+import matlab.engine
+eng = matlab.engine.start_matlab()
 
-import numpy as np
 print('hello')
+print(sys.version)
 
-a = np.arange(15).reshape(3, 5)
+tf = eng.isprime(37)
+print(tf)
 
-print(a)
-
-b = np.array([[1,2],[1,3]])
-
-print(b)
+eng.quit()
