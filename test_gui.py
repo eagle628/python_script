@@ -1,4 +1,4 @@
-#!python3.5
+#!python3.6
 import tkinter as tk
 import test_py
 class Application(tk.Frame):
