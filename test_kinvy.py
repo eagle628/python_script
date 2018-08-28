@@ -17,7 +17,7 @@ class TextWidget(Widget):
     def buttonClicked(self):
         eng = matlab.engine.start_matlab()        #
         a = eng.isprime(37)
-        self.text = '37 is prime number : '+str(a)
+        self.text = 'Is 37 prime number ? : '+str(a)
 
 
 class TestApp(App):
