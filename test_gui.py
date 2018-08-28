@@ -23,7 +23,7 @@ class Application(tk.Frame):
         eng = matlab.engine.start_matlab()
         a = eng.isprime(37)
         print("37 is prime number : "+str(a))
-        y = test_py.generate_plant_response()
+        #y = test_py.generate_plant_response()
 
 root = tk.Tk()
 root.title("Test_GUI")

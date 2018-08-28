@@ -2,12 +2,14 @@
 import test_py
 import sys
 import matplotlib.pyplot as plt
+print(sys.version)
+
+import matlab.engine
+eng = matlab.engine.start_matlab()
 
 print(sys.version)
-print('hello')
 
-
-y = test_py.generate_plant_response()
+y = test_py.generate_plant_response(eng)
 
 t = range(len(y))
 
